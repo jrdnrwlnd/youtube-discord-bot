@@ -1,0 +1,12 @@
+[package]
+name = "youtube-discord-bot"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+serenity = { default-features = false, features = ["client", "standard_framework", "gateway", "rustls_backend", "model", "http", "cache", "voice"], version = "0.10.10" }
+songbird = { features = ["builtin-queue"], version = "0.2.0" }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
